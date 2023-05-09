@@ -1,5 +1,9 @@
 {
   "dependencies": {
-    "atropos": "^1.0.2"
+    "@chakra-ui/react": "^2.6.1",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "atropos": "^1.0.2",
+    "framer-motion": "^10.12.9"
   }
 }

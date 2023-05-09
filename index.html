@@ -16,69 +16,153 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
 
 <body>
     <header>
         <!--cabeçalho-->
-        <center><h1 class="title"><strong><span>ID</span> Soluções</strong></h1></center>
+        <center>
+            <h1 class="title" class="animate__animated animate__backInDown"><strong><span>ID</span> Soluções</strong>
+            </h1>
+        </center>
 
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"><strong>Home</strong></a>
+                <a class="nav-link active" aria-current="page" href="index.html"><strong>Home</strong></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="pages/servicos.html"><strong>Serviços</strong></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><strong>Produtos</strong></a>
+                <a class="nav-link" href="pages/quem.html"><strong>Quem Somos</strong></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><strong>Serviços</strong></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"><strong>Quem Somos</strong></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"><strong>Contato</strong></a>
+                <a class="nav-link" href="pages/contato.html"><strong>Contato</strong></a>
             </li>
 
         </ul>
-
-
-
-
-
         <!--fim cabeçalho-->
     </header>
 
     <main>
         <!--carrosel-->
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="servicos-destaque">
+                        <center>
+
+                            <h1 class="title-servicos">Serviços em Destaques</h1>
+                            <center>
+                                <div class="container-sun">
+                                    <div class="cloud front">
+                                        <span class="left-front"></span>
+                                        <span class="right-front"></span>
+                                    </div>
+                                    <span class="sun sunshine"></span>
+                                    <span class="sun"></span>
+                                    <div class="cloud back">
+                                        <span class="left-back"></span>
+                                        <span class="right-back"></span>
+                                    </div>
+                                </div>
+                            </center>
+                            <div class="wrapper">
+                                <button class="button-saiba" style="color:snow;"> siga para saber mais</button>
+                            </div>
+
+
+                            <h2 class="slogan">Seu conforto é nosssa corrente <span>elétrica</span></h2>
+                        </center>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col">
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+
+                                            <img src="img/banner/placa-solar.jpg" alt="Placa Solar">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <p class="title">BACK</p>
+                                            <p>Leave Me</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col">
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+
+                                            <img src="img/ar-con.jpg" alt="Ar condicionado">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <p class="title">BACK</p>
+                                            <p>Leave Me</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+
+                                            <img src="img/painel.jpg" alt="Painel elétrico">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <p class="title">BACK</p>
+                                            <p>Leave Me</p>
+                                        </div>
+                                    </div>
+                                </div>                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <center>
+
+
+
+                    </center>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
     </main>
     <br>
     <article>
-        <!--serviços-->
-        <center>
-            <h2 style="color: white;">Quais Serviços Atendemos</h2>
-        </center>
-        <br>
-        
-        <div class="container text-center">
-            <div class="container text-center">
-                <div class="row">
-                  <div class="col">
-                    <img src="img/ar-con.jpg" alt="Ar Condicionado" class="geometria" class="imagem-flutuante">
-                  </div>
-                  <div class="col">
-                    <img src="img/banner/placa-solar.jpg" alt="Placa Solar" class="geometria" class="imagem-flutuante">
-                  </div>
-                  <div class="col">
-                    <img src="img/painel.jpg" alt="Painel eletrico" class="geometria" class="imagem-flutuante">
-                  </div>
-                </div>
-              </div>
-           
-            
-        </div>
+
+
 
 
         <br>
@@ -90,42 +174,19 @@
         </center>
         <!--Fazer um Web scraping de Instagram da ID soluções-->
         <div class="container text-center">
-            <div class="row">
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
-                        </div>
-                    </div>
+           
+            <div class="cards">
+                <div class="card red">
+                    <p class="tip">Hover Me</p>
+                    <p class="second-text">Lorem Ipsum</p>
                 </div>
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
-                        </div>
-                    </div>
+                <div class="card blue">
+                    <p class="tip">Hover Me</p>
+                    <p class="second-text">Lorem Ipsum</p>
                 </div>
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
-                        </div>
-                    </div>
+                <div class="card green">
+                    <p class="tip">Hover Me</p>
+                    <p class="second-text">Lorem Ipsum</p>
                 </div>
             </div>
         </div>
@@ -141,23 +202,12 @@
     <br>
     <br>
 
-    <!--formularios-->
-    <main>
-        <center>
-            <form class="form">
-                <ul class="wrapper">
 
-                    <li style="--i:4;"><input class="input" type="text" placeholder="Nome" required=""></li>
-                    <li style="--i:3;"><input class="input" placeholder="Telefone" required="" name="phone"></li>
-                    <li style="--i:2;"><input class="input" type="email" placeholder="E-mail" required="" name="email">
-                    </li>
-                    <button style="--i:1;" class="button-form">Enviar</button>
-                </ul>
-            </form>
-        </center>
-        
+    <main>
+        <!--fazer API de clima e tempo-->
+
     </main>
-    <!--fazer API de clima e tempo-->
+
 
 
 
@@ -166,11 +216,9 @@
     <div class="container">
         <footer class="py-5">
             <div class="row">
-                <div>
-                    <img src="img/icone/planta-objeto.svg" alt="Planta" class="planta">
-                </div>
+
                 <div class="col-6 col-md-2 mb-3">
-                   
+
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Serviços</a></li>
@@ -179,19 +227,26 @@
 
                     </ul>
                 </div>
+
+
+
                 <div class="col-md-5 offset-md-1 mb-3">
-                    <form>
-                        <h5>Cadastre-se</h5>
-                        <p>Resumo mensal do que há de novo e emocionante de nós.</p>
-                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                            <label for="newsletter1" class="visually-hidden">Email</label>
-                            <input id="newsletter1" type="text" class="form-control" placeholder="Email">
-                            <button class="btn btn-primary" type="button">Confirmar</button>
-                        </div>
+                    <form class="form">
+                        <ul class="wrapper">
+
+                            <li style="--i:4;"><input class="input" type="text" placeholder="Nome" required=""></li>
+                            <li style="--i:3;"><input class="input" placeholder="Telefone" required="" name="phone">
+                            </li>
+                            <li style="--i:2;"><input class="input" type="email" placeholder="E-mail" required=""
+                                    name="email">
+                            </li>
+                            <button style="--i:1;" class="button-form">Enviar</button>
+                        </ul>
                     </form>
-                    
+
+
                 </div>
-               
+
             </div>
             <br>
             <br>
