@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+ 
+</head>
+
+<body>
+  <form id="formulario">
+
+    <label for="name">Nome</label>
+    <input type="text" name="name" id="name" />
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone" placeholder="Digite o número de telefone">
+    <select id="servico" name="servico">
+      <option value="" selected disabled>Selecione o serviço</option>
+      <option value="ar-condicionado">Ar Condicionado</option>
+      <option value="cerca-eletrica">Cerca Elétrica</option>
+      <option value="portao-eletrico">Portão Elétrico</option>
+      <option value="camera">Câmera</option>
+      <option value="energia-solar">Energia Solar</option>
+      <option value="eletrica-residencial">Elétrica Residencial</option>
+      <option value="eletrica-predial">Elétrica Predial</option>
+      <option value="eletrica-industrial">Elétrica industrial</option>
+    </select>
+    <label for="tipo">Tipo de Serviço:</label>
+    <select id="tipo" name="tipo">
+      <option value="" selected disabled>Selecione o tipo de serviço</option>
+      <option value="manutencao">Manutenção</option>
+      <option value="instalacao">Instalação</option>
+      <option value="higienizacao" id="higienizacao-option" style="display: none;">Higienização</option>
+      <option value="manutencao-especial" id="manutencao-especial-option" style="display: none;">Manutenção Especial</option>
+      <option value="manutencao-emergencia" id="manutencao-emergencia-option" style="display: none;">Manutenção emergência</option>
+    </select>
+    <label for="message">Escreva alguma observação (opiconal)</label>
+    <textarea name="message" id="message" rows="4"></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+  <div class="form-box">
+    <form class="form">
+        <span class="title">Sign up</span>
+        <span class="subtitle">Create a free account with your email.</span>
+        <div class="form-container">
+          <input type="text" class="input" placeholder="Full Name">
+          <input type="email" class="input" placeholder="Email">
+          <input type="password" class="input" placeholder="Password">
+        </div>
+        <button>Sign up</button>
+    </form>
+    <div class="form-section">
+      <p>Have an account? <a href="">Log in</a> </p>
+    </div>
+    </div>
+
+  <script>
+    const servicoSelect = document.getElementById('servico');
+    const tipoSelect = document.getElementById('tipo');
+    const higienizacaoOption = document.getElementById('higienizacao-option');
+    const manutencaoespecial = document.getElementById('manutencao-especial-option');
+    const manutencaoemergencia = document.getElementById('manutencao-emergencia-option');
+
+    servicoSelect.addEventListener('change', function () {
+      const selectedServico = this.value;
+
+      if (selectedServico === 'eletrica-residencial' || selectedServico === 'eletrica-predial' || selectedServico === 'eletreletrica-industrial' ) {
+        manutencaoespecial.style.display = 'block';
+        manutencaoemergencia.style.display = 'block';
+      } else {
+        manutencaoespecial.style.display = 'none';
+        manutencaoemergencia.style.display = 'none';
+      }
+    });
+
+    servicoSelect.addEventListener('change', function () {
+      const selectedServico = this.value;
+
+      if (selectedServico === 'ar-condicionado' || selectedServico === 'energia-solar') {
+        higienizacaoOption.style.display = 'block';
+      } else {
+        higienizacaoOption.style.display = 'none';
+      }
+    });
+  </script>
+
+</body>
+
+</html>
